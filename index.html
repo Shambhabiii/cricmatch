@@ -1,64 +1,46 @@
-[8:32 PM, 5/26/2024] Shambhabi: <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cricket Match Tracker</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
+        <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <nav>
-            <div class="hamburger-menu">
-                <a href="index.html">Home</a>
-                <a href="team.html">Teams</a>
-                <a href="points.html">Points Table</a>
-            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="team-details.html">Team Details</a></li>
+                <li><a href="points-table.html">Points Table</a></li>
+            </ul>
         </nav>
     </header>
-
-    <main id="home">
+    <main>
         <h1>Ongoing Matches</h1>
-        <div id="matches-container"></div>
-    </main>
-
-    <footer>
-        <p>Visit <a href="https://www.bcci.tv/" target="_blank">BCCI</a></p>
-        <p>Email: info@bcci.tv</p>
-    </footer>
-
-    <script src="js/script.js"></script>
-</body>
-</html>
-[8:33 PM, 5/26/2024] Shambhabi: <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cricket Match Tracker</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="hamburger-menu">
-                <a href="index.html">Home</a>
-                <a href="team.html">Teams</a>
-                <a href="points.html">Points Table</a>
+        <div class="match-cards">
+            <div class="card">
+                <h2>Match 1</h2>
+                <p>Team A vs Team B</p>
+                <button onclick="window.location.href='team-details.html'">View Details</button>
             </div>
-        </nav>
-    </header>
-
-    <main id="home">
-        <h1>Ongoing Matches</h1>
-        <div id="matches-container"></div>
+            <div class="card">
+                <h2>Match 2</h2>
+                <p>Team C vs Team D</p>
+                <button onclick="window.location.href='team-details.html'">View Details</button>
+            </div>
+            
+        </div>
     </main>
-
     <footer>
-        <p>Visit <a href="https://www.bcci.tv/" target="_blank">BCCI</a></p>
-        <p>Email: info@bcci.tv</p>
+        <p>&copy; 2024 Cricket Match Tracker | <a href="https://www.bcci.tv/">BCCI</a> | Email: <a href="mailto:bcci@bcci.tv">bcci@bcci.tv</a></p>
     </footer>
-
     
+
 </body>
 </html>
